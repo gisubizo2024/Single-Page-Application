@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Week 7 SPA</title>
+  <style>
+    body { font-family: Arial; margin: 20px; }
+    nav a { margin: 10px; cursor: pointer; }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+
+  <nav id="navbar" class="hidden">
+    <a onclick="renderPage('home')">Home</a>
+    <a onclick="renderPage('dashboard')">Dashboard</a>
+    <a onclick="logout()">Logout</a>
+  </nav>
+
+  <div id="app"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
